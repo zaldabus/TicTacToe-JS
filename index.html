@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="underscore.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="ticTacToe.js"></script>
+  <script src="jQuery.js"></script>
+</head>
+
+<body>
+  <ul class="group">
+    <li id="1"></li>
+    <li id="2"></li>
+    <li id="3"></li>
+    <li id="4"></li>
+    <li id="5"></li>
+    <li id="6"></li>
+    <li id="7"></li>
+    <li id="8"></li>
+    <li id="9"></li>
+  </ul>
+</body>
+
+<style>
+
+body, ul, li {
+  margin: 5;
+  padding: 0;
+  border: 0;
+}
+  ul {
+    list-style: none;
+    background: red;
+    width: 165px;
+  }
+
+  li {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: 2px solid gray;
+    float: right;
+    cursor: pointer;
+    font-size: 50px;
+  }
+
+  li:hover {
+    background: transparent;
+  }
+
+  .group:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  li.clicked {
+    background: blue;
+    color: white;
+    text-align: center;
+  }
+
+</style>
+</html>
